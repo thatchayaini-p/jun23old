@@ -1,0 +1,11 @@
+name: Child Workflow
+
+on:
+  workflow_call:
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Message
+        run: echo "✅ This is the child workflow, triggered by another workflow"

@@ -1,0 +1,10 @@
+name: Parent Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-child:
+    uses: ./.github/workflows/called.yml
